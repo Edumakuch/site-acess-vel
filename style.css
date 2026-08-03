@@ -1,0 +1,196 @@
+/* Variáveis de Cores e Estilização Base */
+:root {
+  --bg-color: #f4f6f8;
+  --text-color: #1a1a1a;
+  --header-bg: #0d47a1;
+  --header-text: #ffffff;
+  --card-bg: #ffffff;
+  --border-color: #cccccc;
+  --accent-color: #ffeb3b;
+  --font-size-base: 1rem;
+}
+
+/* Modo Escuro / Alto Contraste */
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --header-bg: #000000;
+  --header-text: #00ff66;
+  --card-bg: #1e1e1e;
+  --border-color: #444444;
+  --accent-color: #00ff66;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Barra de Acessibilidade Flutuante/Fixa */
+.accessibility-bar {
+  background-color: #212121;
+  padding: 10px;
+  text-align: right;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.accessibility-bar button {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #ffffff;
+  padding: 8px 12px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.accessibility-bar button:focus,
+.accessibility-bar button:hover {
+  outline: 3px solid var(--accent-color);
+  background-color: #e0e0e0;
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Menu de Navegação */
+nav {
+  background-color: #263238;
+  padding: 12px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 5px 12px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+nav ul li a:hover, 
+nav ul li a:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--accent-color);
+  outline: 2px solid var(--accent-color);
+}
+
+/* Conteúdo Principal */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+section {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+section:focus {
+  outline: 3px solid var(--header-bg);
+}
+
+h2 {
+  border-bottom: 3px solid var(--header-bg);
+  padding-bottom: 8px;
+  margin-top: 0;
+  color: var(--header-bg);
+}
+
+body.dark-mode h2 {
+  color: var(--header-text);
+  border-bottom-color: var(--header-text);
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+pre {
+  background-color: #272822;
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+code {
+  background-color: rgba(0, 0, 0, 0.08);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+body.dark-mode code {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  margin-top: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .accessibility-bar {
+    text-align: center;
+  }
+
+  .accessibility-bar button {
+    margin: 3px;
+    padding: 6px 10px;
+  }
+}
