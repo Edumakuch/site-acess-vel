@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pensamento Computacional para Todos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="accessibility-bar" aria-label="Controles de Acessibilidade">
+    <button id="btn-increase-font" aria-label="Aumentar tamanho do texto">A+</button>
+    <button id="btn-decrease-font" aria-label="Diminuir tamanho do texto">A-</button>
+    <button id="btn-toggle-theme" aria-label="Alternar modo escuro e claro">Contraste / Escuro</button>
+    <button id="btn-read-text" aria-label="Ouvir a seção visível ou texto selecionado">🔊 Ouvir Texto</button>
+    <button id="btn-stop-text" aria-label="Parar leitura de texto">⏹️ Parar Leitura</button>
+  </section>
+
+  <header>
+    <h1>Pensamento Computacional para Todos</h1>
+    <p>Aprenda os 4 pilares da resolução de problemas de forma acessível e prática.</p>
+  </header>
+
+  <nav aria-label="Navegação Principal">
+    <ul>
+      <li><a href="#introducao">Introdução</a></li>
+      <li><a href="#decomposicao">Decomposição</a></li>
+      <li><a href="#padroes">Reconhecimento de Padrões</a></li>
+      <li><a href="#abstracao">Abstração</a></li>
+      <li><a href="#algoritmos">Algoritmos</a></li>
+    </ul>
+  </nav>
+
+  <main id="conteudo-principal">
+    <section id="introducao" class="secao-conteudo" tabindex="-1">
+      <h2>1. Introdução ao Pensamento Computacional</h2>
+      <article>
+        <h3>O que é Pensamento Computacional?</h3>
+        <p>O Pensamento Computacional é uma estratégia formulada para a resolução de problemas de forma estruturada. Ele utiliza fundamentos da Ciência da Computação para analisar desafios complexos e encontrar soluções que possam ser executadas tanto por humanos quanto por computadores.</p>
+        
+        <h3>Importância na Escola e na Sociedade</h3>
+        <p>Desenvolve o raciocínio lógico, o pensamento crítico e a capacidade de abstração. Na escola, estimula o protagonismo dos alunos no aprendizado. Na sociedade moderna, capacita cidadãos para compreender e transformar o mundo digital ao seu redor.</p>
+        
+        <h3>Onde é Utilizado?</h3>
+        <p>É aplicado no desenvolvimento de softwares, no planejamento urbano e financeiro, na logística, na medicina diagnóstica, na robótica e até em decisões simples do dia a dia.</p>
+      </article>
+    </section>
+
+    <section id="decomposicao" class="secao-conteudo" tabindex="-1">
+      <h2>2. Decomposição</h2>
+      <article>
+        <h3>Definição e Explicação</h3>
+        <p>Decomposição consiste no ato de quebrar um problema grande e complexo em partes menores e mais simples, tornando a resolução mais organizada e gerenciável.</p>
+        
+        <h3>Exemplo do Cotidiano</h3>
+        <p><strong>Organizar uma festa:</strong> Em vez de encarar a festa como uma única tarefa gigante, você divide em partes: criar a lista de convidados, encomendar a comida, escolher as músicas e comprar decorações.</p>
+        
+        <h3>Exemplo na Informática</h3>
+        <p><strong>Criação de um e-commerce:</strong> O projeto do sistema é fracionado em módulos: tela de cadastro de usuários, catálogo de produtos, carrinho de compras e gateway de pagamento.</p>
+      </article>
+    </section>
+
+    <section id="padroes" class="secao-conteudo" tabindex="-1">
+      <h2>3. Reconhecimento de Padrões</h2>
+      <article>
+        <h3>Definição e Explicação</h3>
+        <p>É a identificação de características comuns, tendências ou repetições em diferentes problemas. Isso possibilita aproveitar estratégias que já funcionaram anteriormente.</p>
+        
+        <h3>Exemplo do Cotidiano</h3>
+        <p><strong>Previsão do tempo:</strong> Perceber que sempre que o céu fica com nuvens escuras e o vento esfria, a chuva acontece em seguida. Isso permite que você se previna levando um guarda-chuva.</p>
+        
+        <h3>Exemplo na Programação</h3>
+        <p><strong>Uso de Laços de Repetição (Loops):</strong> Utilizar estruturas como <code>for</code> ou <code>while</code> para realizar uma mesma instrução 100 vezes sem ter que digitar o código 100 vezes repetidamente.</p>
+      </article>
+    </section>
+
+    <section id="abstracao" class="secao-conteudo" tabindex="-1">
+      <h2>4. Abstração</h2>
+      <article>
+        <h3>Definição e Explicação</h3>
+        <p>Abstração é o processo de filtrar informações, focando apenas nos elementos essenciais e ignorando os detalhes que não interferem na solução do problema.</p>
+        
+        <h3>Exemplo Prático</h3>
+        <p><strong>Mapa do Metrô:</strong> O mapa exibe apenas as estações, linhas e conexões. Detalhes como o relevo do terreno, prédios na superfície ou cor do asfalto são ignorados porque não ajudam no deslocamento do passageiro.</p>
+        
+        <h3>Importância</h3>
+        <p>Evita sobrecarga de informações desnecessárias, reduz a complexidade e permite criar modelos genéricos aplicáveis a diferentes cenários.</p>
+      </article>
+    </section>
+
+    <section id="algoritmos" class="secao-conteudo" tabindex="-1">
+      <h2>5. Elaboração de Algoritmos</h2>
+      <article>
+        <h3>Definição e Funcionamento</h3>
+        <p>Um algoritmo é uma sequência finita, lógica e ordenada de instruções claras para realizar uma tarefa ou resolver um problema específico.</p>
+        
+        <h3>Exemplo em Linguagem Natural (Receita de Suco)</h3>
+        <ol>
+          <li>Pegue um copo e uma jarra de água.</li>
+          <li>Corte a fruta ao meio.</li>
+          <li>Esprema o suco da fruta no copo.</li>
+          <li>Adicione 200ml de água e açúcar a gosto.</li>
+          <li>Misture bem com uma colher e sirva.</li>
+        </ol>
+        
+        <h3>Exemplo em Pseudocódigo (Verificação de Paridade)</h3>
+        <pre><code>
+INICIO
+   Exibir "Digite um número inteiro:"
+   Ler Numero
+   SE (Numero MOD 2 == 0) ENTAO
+      Exibir "O número informado é PAR."
+   SENAO
+      Exibir "O número informado é ÍMPAR."
+   FIMSE
+FIM
+        </code></pre>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto Desenvolvido por: Eduardo Makuch de A.<p>
+    <p>Pensamento Computacional para Todos &copy; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
